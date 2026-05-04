@@ -44,4 +44,4 @@ If you want the AI to accurately check timestamps for sequence artifacts, run a 
     stat -f "%N %SB" * | pbcopy
   ```
 
-*Now just paste your clipboard into the AI chat!*
+*Note that the PowerShell may not return the outputs, but you have already pasted somthing. Just paste your clipboard into the AI chat!*
