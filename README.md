@@ -36,7 +36,12 @@ To get the table, the AI needs to know what files you have. Choose the easiest m
 **Method C: The "Pro Sequence" (Best for Artifact Detection)**
 If you want the AI to accurately check timestamps for sequence artifacts, run a quick command to copy the exact file creation dates:
 *   **Windows:** Shift+Right-click inside the folder, click "Open PowerShell here", paste this, and hit Enter:
-    `Get-ChildItem | Select-Object Name, CreationTime | clip`
+  ```bash
+    Get-ChildItem | Select-Object Name, CreationTime | clip
+  ```
 *   **Mac:** Open Terminal in the folder, paste this, and hit Enter:
-    `stat -f "%N %SB" * | pbcopy`
-*   *Now just paste your clipboard into the AI chat!*
+  ```bash
+    stat -f "%N %SB" * | pbcopy
+  ```
+
+*Now just paste your clipboard into the AI chat!*
